@@ -1,4 +1,4 @@
-# Vision Simulator Chrome Extension
+# Accessibility Vision Simulator Chrome Extension
 
 A Chrome extension that helps developers and designers test their websites for accessibility by simulating various visual impairments.
 
