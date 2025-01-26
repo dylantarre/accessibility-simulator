@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      width: 300px;
+      padding: 16px;
+      font-family: Arial, sans-serif;
+    }
+    .controls {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .control-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    select, button {
+      padding: 8px;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    button {
+      border: none;
+      background: #22c55e;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .intensity-control {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .intensity-label {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      color: #666;
+    }
+    input[type="range"] {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="controls">
+    <div class="control-group">
+      <select id="impairmentType">
+        <option value="normal">Normal Vision</option>
+        <option value="protanopia">Protanopia</option>
+        <option value="deuteranopia">Deuteranopia</option>
+        <option value="tritanopia">Tritanopia</option>
+        <option value="blur">Blurred Vision</option>
+        <option value="contrast">Contrast Sensitivity</option>
+      </select>
+      
+      <div class="intensity-control">
+        <div class="intensity-label">
+          <span>Intensity</span>
+          <span id="intensityValue">50%</span>
+        </div>
+        <input type="range" id="intensity" min="0" max="100" value="50">
+      </div>
+    </div>
+
+    <button id="toggle">Enable Simulation</button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Vision Simulator",
+  "version": "1.0",
+  "description": "Simulate different visual impairments",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["content.js"]
+  }]
+}

@@ -1,0 +1,40 @@
+.simulator-container {
+  padding: 20px;
+}
+
+.controls {
+  margin-bottom: 20px;
+}
+
+.simulation-area {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Simulation Effects */
+.colorblind-simulation {
+  filter: grayscale(100%);
+}
+
+.low-vision-simulation {
+  filter: blur(2px);
+  opacity: 0.7;
+}
+
+.motion-sensitive-simulation {
+  transition: none !important;
+}
+
+.sample-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+} 
